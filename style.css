@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body{
+    background-image: linear-gradient(45deg, red, blue);
+    background-size: 300% 300%;
+    animation: color 12s ease-in-out infinite;
+}
+
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+
+    50%{
+        background-position: 100% 50%;
+    }
+
+    100%{
+        background-position: 0 50%;
+    }
+
+}
+
+.text-center{
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    font-weight: bolder;
+    font-size: 40px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.container{
+    background-color: rgb(37, 37, 37);
+    width: 300px;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.button{
+    font-family: 'Roboto', sans-serif;
+    width: 66px;
+    padding: 20px;
+    margin: 0 3px;
+    border: 0px solid black;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: orange;
+}
+
+.button:hover{
+    background-color: rgb(247, 189, 83);
+    transition: 0.3s;
+}
+
+.row{
+  margin: 8px 0;
+}
+
+.row input{
+    font-family: 'Roboto', sans-serif;
+    width: 270px;
+    font-size: 20px;
+    margin: 0;
+    padding: 10px 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    text-align: right;
+    background-color: black;
+    color: white;
+}
+
+footer{
+    color: white;
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 80px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.version{
+    margin-top: 30px;
+    letter-spacing: 12px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 600px){
+    .text-center{
+        color: white;
+        font-family: 'Press Start 2P', cursive;
+        font-weight: bolder;
+        font-size: 20px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    footer{
+        color: white;
+        font-family: 'Press Start 2P', cursive;
+        font-size: 10px;
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    .version{
+        margin-top: 20px;
+        letter-spacing: 12px;
+        font-size: 8px;
+    }
+}
